@@ -1,0 +1,555 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Yoga</title>
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Кодировка страницы -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width">
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body class="body">
+	<section class="main">
+		<div class="main__header">
+			<a href="#" class="header__link">
+				<img src="img/Home/logo_blue.png" alt="" class="header__logo">
+			</a>
+			<div class="header__menu">
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<div class="header__nav">
+					<a href="./index.html" class="header__nav-link">Home</a>
+					<a href="./About.html" class="header__nav-link">About Us</a>
+					<a data-goto=".teachers" href="#" class="header__nav-link">Teacher</a>
+					<a href="./pricing.html" class="header__nav-link">Pricing</a>
+					<a href="./classes.html" class="header__nav-link">Classes</a>
+					<a href="./Contact.html" class="header__nav-link">Contact</a>
+					<a href="" class="header__nav-btn btn">Start Your Free Trial</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="main__offer">
+				<p class="offer__text offer__text-1">Be Happy</p>
+				<p class="offer__text offer__text-2">Be Healthy</p>
+				<p class="offer__text offer__text-3">Be Infinity</p>
+			</div>
+		</div>
+		<img class="main__vector" src="img/Home/Vector.png" alt="">
+	</section>
+
+	<section class="description">
+		<div class="container description__container">
+			<div class="description__active">
+				<p class="active__title">Everyone's Yoga</p>
+				<p class="active__text">We offers over 4,000 professionally-filmed online yoga classes taught by
+					experienced, certified yoga teachers to customers around the world. We believe that yoga should be
+					accessible to everyone and our classes are designed to give you an in-studio experience, at an affordable
+					price, in your own home.</p>
+				<div class="active__video">
+					<img src="img/Home/video.png" alt="" class="active__video-picture">
+					<a href="#" onclick="toggle()"; class="active__video-button">
+						<img src="img/Home/triangle.svg" alt="" class="active__video-triangle">
+					</a>
+				</div>
+			</div>
+			<div class="description__triggers">
+				<div class="trigger">
+					<img src="img/Home/icon_balance.png" alt="" class="trigger__img">
+					<p class="trigger__title">Balance Body & Mind</p>
+					<p class="trigger__subtitle">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem
+						Ipsum has been industry's standard.</p>
+				</div>
+				<div class="trigger">
+					<img src="img/Home/icon_weight.png" alt="" class="trigger__img">
+					<p class="trigger__title">Weight Loss</p>
+					<p class="trigger__subtitle">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem
+						Ipsum has been industry's standard.</p>
+				</div>
+				<div class="trigger">
+					<img src="img/Home/icon_meditation.png" alt="" class="trigger__img">
+					<p class="trigger__title">Meditation Practice</p>
+					<p class="trigger__subtitle">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem
+						Ipsum has been industry's standard.</p>
+				</div>
+				<div class="trigger">
+					<img src="img/Home/icon_freedom.png" alt="" class="trigger__img">
+					<p class="trigger__title">Yoga is a way to freedom</p>
+					<p class="trigger__subtitle">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem
+						Ipsum has been industry's standard.</p>
+				</div>
+				<div class="trigger">
+					<img src="img/Home/icon_energy.png" alt="" class="trigger__img">
+					<p class="trigger__title">Increased energy</p>
+					<p class="trigger__subtitle">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem
+						Ipsum has been industry's standard.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="popup">
+		<iframe class="popup__video" src="https://www.youtube.com/embed/vNyJuQuuMC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<img src="img/Home/close.svg" alt="" class="popup__close" onclick="toggle()";>
+	</div>
+
+
+	<section class="classes">
+		<div class="container">
+			<img src="img/Home/flower.png" alt="" class="classes__img">
+			<p class="classes__title">Our Classes</p>
+			<div class="classes__slider">
+				<div class="classes__slide">
+					<img src="img/Classes/card1.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Welcome to part 5 of our beginner series with Simon Park!
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card2.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card3.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card4.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days ...
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card5.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Welcome to part 5 of our beginner series with Simon Park!
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card6.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card7.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card8.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days ...
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card9.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Welcome to part 5 of our beginner series with Simon Park!
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card10.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card11.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!
+					</p>
+				</div>
+				<div class="classes__slide">
+					<img src="img/Classes/card12.webp" alt="" class="slide__img">
+					<p class="slide__title">Seated and Supine Poses for Beginners</p>
+					<div class="slide__clock">
+						<img src="img/Home/icon_clock.png" alt="" class="slide__clock-icon">
+						<p class="slide__clock-text">7:00 am — 11:00 am</p>
+					</div>
+					<div class="slide__teacher">
+						<img src="img/Home/icon_person.png" alt="" class="slide__teacher-icon">
+						<p class="slide__teacher-text">Simon Park</p>
+					</div>
+					<div class="slide__advanced">
+						<img src="img/Home/icon_arrowUp.png" alt="" class="slide__advanced-icon">
+						<p class="slide__advanced-text">Advanced</p>
+					</div>
+					<p class="slide__text">
+						Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days ...
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="gallery">
+		<div class="container">
+			<div class="gallery__free-trial">
+				<p class="gallery__title">Tap into your inner fountain of youth.</p>
+				<p class="gallery__subtitle">Access hundreds of yoga classes shot in natural studios around the world. Unlimited access for $15/month.</p>
+				<a href="" class="gallery__link">Start Your 14-Day Free Trial</a>
+			</div>
+			<div class="gallery__album">
+				<img src="img/Home/picture1.webp" alt="" class="gallery__img01">
+				<img src="img/Home/picture2.webp" alt="" class="gallery__img02">
+				<img src="img/Home/picture3.webp" alt="" class="gallery__img03">
+				<img src="img/Home/picture4.webp" alt="" class="gallery__img04">
+				<img src="img/Home/picture5.webp" alt="" class="gallery__img05">
+			</div>
+		</div>
+	</section>
+
+	<section class="desc-teacher">
+		<div class="container">
+			<div class="desc-teacher__wrapper">
+				<p class="desc-teacher__title">The Most Experienced Yoga Instructors</p>
+				<p class="desc-teacher__text">
+					Our mission is to bring the communities of Brookhaven, Dunwoody, Old Fourth Ward, and Buckhead a knowledgeable, welcoming, and comfortable place to practice yoga and to enhance your well-being and general approach to holistic health.
+				</p>
+				<p class="desc-teacher__desc-button">Meet Our Teacher</p>
+				<a href="#" class="desc-teacher__link">
+					<img src="img/Home/icon_arrowDown.png" alt="" class="desc-teacher__link_img">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="teachers">
+		<div class="container">
+			<div class="teachers__01 teacher">
+				<img src="img/Home/teacher1.png" alt="" class="teachers__img">
+				<p class="teachers__name">Becky Nickerson</p>
+				<p class="teachers__skill">Owner/Lead Instructor</p>
+			</div>
+			<div class="teachers__02 teacher">
+				<img src="img/Home/teacher2.png" alt="" class="teachers__img">
+				<p class="teachers__name">Taylor Harkness</p>
+				<p class="teachers__skill">Owner/Lead Instructor</p>
+			</div>
+			<div class="teachers__03 teacher">
+				<img src="img/Home/teacher3.png" alt="" class="teachers__img">
+				<p class="teachers__name">Natalie Skubic</p>
+				<p class="teachers__skill">Instructor</p>
+			</div>
+			<div class="teachers__04 teacher">
+				<img src="img/Home/teacher4.png" alt="" class="teachers__img">
+				<p class="teachers__name">Meredith Hesse</p>
+				<p class="teachers__skill">Instructor</p>
+			</div>
+			<div class="teachers__05 teacher">
+				<img src="img/Home/teacher5.png" alt="" class="teachers__img">
+				<p class="teachers__name">Jeff Sousa</p>
+				<p class="teachers__skill">Instructor</p>
+			</div>
+			<div class="teachers__06 teacher">
+				<img src="img/Home/teacher6.png" alt="" class="teachers__img">
+				<p class="teachers__name">Ashley Lorenzo</p>
+				<p class="teachers__skill">Instructor</p>
+			</div>
+			<div class="teachers__07 teacher">
+				<img src="img/Home/teacher7.png" alt="" class="teachers__img">
+				<p class="teachers__name">Jessica Calderon</p>
+				<p class="teachers__skill">Instructor</p>
+			</div>
+			<div class="teachers__08 teacher">
+				<img src="img/Home/teacher8.png" alt="" class="teachers__img">
+				<p class="teachers__name">Doug Johnson</p>
+				<p class="teachers__skill">Instructor</p>
+			</div>
+			<div class="teachers__09 teacher">
+				<img src="img/Home/teacher9.png" alt="" class="teachers__img">
+				<p class="teachers__name">Sharon Caplan</p>
+				<p class="teachers__skill">Instructor</p>
+			</div>
+			<div class="teachers__10 teacher">
+				<img src="img/Home/teacher10.png" alt="" class="teachers__img">
+				<p class="teachers__name">Erin Rogers</p>
+				<p class="teachers__skill">Instructor</p>
+			</div>
+			<div class="teachers__11 teacher">
+				<img src="img/Home/teacher11.png" alt="" class="teachers__img">
+				<p class="teachers__name">Jessica Taylor</p>
+				<p class="teachers__skill">Instructor</p>
+			</div>
+			<div class="teachers__12 teacher">
+				<img src="img/Home/teacher12.png" alt="" class="teachers__img">
+				<p class="teachers__name">Todd Delaune</p>
+				<p class="teachers__skill">Instructor</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="challenge">
+		<div class="container">
+			<div class="challenge__wrapper">
+				<div class="challenge__active">
+					<p class="challenge__title">2020 Renewal Series</p>
+					<p class="challenge__text">Finally, a resolution you can stick to. Reconnect with your fitness goals in 2017 with four classes designed to ease you back into your routine.</p>
+					<a href="" class="challenge__link">Take this challenge</a>
+				</div>
+				<img src="img/Home/renewal.webp " alt="" class="challenge__img">
+			</div>
+		</div>
+	</section>
+
+	<section class="partners">
+		<div class="container">
+			<div class="partners__wrapper">
+				<img src="img/Home/brand1.svg" alt="" class="partners__img01">
+				<img src="img/Home/brand2.svg" alt="" class="partners__img02">
+				<img src="img/Home/brand3.svg" alt="" class="partners__img03">
+				<img src="img/Home/brand4.svg" alt="" class="partners__img04">
+				<img src="img/Home/brand5.svg" alt="" class="partners__img05">	
+			</div>
+		</div>
+	</section>
+
+	<section class="subscribe">
+		<div class="container">
+			<div class="subscribe__wrapper">
+				<a href="" class="subscribe__link">
+					<img src="img/Home/logo_white.svg" alt="" class="subscribe__logo">
+				</a>
+				<div class="subscribe__info">
+					<p class="subscribe__title">subscribe</p>
+					<p class="subscribe__subtitle">To receive the lastest freebies in your inbox</p>
+				</div>
+				<form action="" class="subscribe__form" id="form-subscribe">
+					<input type="email" class="subscribe__input" placeholder="Your Address Email" name="email">
+					<div id="error"></div>
+					<input type="submit" class="subscribe__btn" value="subscribe" name="submit">
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer01">
+		<div class="container">
+			<div class="footer01__contact">
+				<p class="footer01__title">Contact Us</p>
+				<a href="" class="footer01__address footer01__text">PO Box 16122 Collins Street West, Victoria 8007 Australia</a>
+				<a href="mailto:Alistudio@gmail.com" target="_blank" class="footer01__mail footer01__text">Alistudio@gmail.com</a>
+				<a href="tel:+61383766284" class="footer01__tel footer01__text">+61 3 8376 6284</a>
+				<div class="footer01__social">
+					<a href="http://facebook.com" target="_blank" class="footer01__social_link">
+						<img src="img/Home/footer_facebook.png" alt="" class="footer01__facebook">
+					</a>
+					<a href="https://twitter.com/" target="_blank" class="footer01__social_link">
+						<img src="img/Home/footer_twitter.png" alt="" class="footer01__twitter">
+					</a>
+					<a href="https://www.gmail.com/" target="_blank" class="footer01__social_link">
+						<img src="img/Home/footer_google.png" alt="" class="footer01__gmail">
+					</a>
+					<a href="https://www.pinterest.com/" target="_blank" class="footer01__social_link">
+						<img src="img/Home/footer_pinterest.png" alt="" class="footer01__pinterest">
+					</a>
+				</div>
+			</div>
+			<div class="footer01__links">
+				<p class="footer01__title">Useful Links</p>
+				<a href="" class="footer01__useful-link footer01__link">About Us</a>
+				<a href="" class="footer01__useful-link footer01__link">Advertise</a>
+				<a href="" class="footer01__useful-link footer01__link">Terms & Conditions</a>
+				<a href="" class="footer01__useful-link footer01__link">Privacy Policy</a>
+				<a href="" class="footer01__useful-link footer01__link">Careers</a>
+				<a href="" class="footer01__useful-link footer01__link">Shop</a>
+			</div>
+			<div class="footer01__hours">
+				<p class="footer01__title">Open Hours</p>
+				<div class="footer01__hours_wrapper">
+					<p class="footer01__day">Monday</p>
+					<img src="img/Home/footer_arrowRight2.png" alt="" class="footer01__arrow">
+					<p class="footer01__time">11am-2pm</p>
+					<p class="footer01__day">Tuesday</p>
+					<img src="img/Home/footer_arrowRight2.png" alt="" class="footer01__arrow">
+					<p class="footer01__time">8am-10pm</p>
+					<p class="footer01__day">Wednesday</p>
+					<img src="img/Home/footer_arrowRight2.png" alt="" class="footer01__arrow">
+					<p class="footer01__time">11am-12pm</p>
+					<p class="footer01__day">Thursday</p>
+					<img src="img/Home/footer_arrowRight2.png" alt="" class="footer01__arrow">
+					<p class="footer01__time">11am-12pm</p>
+					<p class="footer01__day">Friday</p>
+					<img src="img/Home/footer_arrowRight2.png" alt="" class="footer01__arrow">
+					<p class="footer01__time">10am-2pm</p>
+					<p class="footer01__day">Saturday</p>
+					<img src="img/Home/footer_arrowRight2.png" alt="" class="footer01__arrow">
+					<p class="footer01__time">10am-2pm</p>
+					<p class="footer01__day">Sunday</p>
+					<img src="img/Home/footer_arrowRight2.png" alt="" class="footer01__arrow">
+					<p class="footer01__time">Close</p>
+				</div>
+			</div>
+			<div class="footer01__location">
+				<p class="footer01__title">Our Location</p>
+				<div id="map" class="footer01__map"></div>
+			</div>
+		</div>
+	</footer>
+
+	
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1?apikey=8fc290f0-4ea9-469c-9a6b-0cd4d5ff3b06&lang=ru_RU" type="text/javascript">
+  </script>
+	<script src="js/main.js"></script>
+	
+</body>
+
+</html>
