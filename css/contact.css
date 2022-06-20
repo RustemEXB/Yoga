@@ -767,7 +767,8 @@ body._lock {
   }
   .main__subtitle {
     max-width: 330px;
-    margin-bottom: 0 px;
+    margin-bottom: 0
+ px;
   }
   .main__offer {
     margin: 88px 0 135px 0;
@@ -807,7 +808,7 @@ body._lock {
   }
   .subscribe__form {
     grid-column: 1/-1;
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .subscribe__logo {
     display: none;
