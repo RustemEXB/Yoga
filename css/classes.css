@@ -862,7 +862,7 @@ body._lock {
   }
   .subscribe__form {
     grid-column: 1/-1;
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .subscribe__logo {
     display: none;
